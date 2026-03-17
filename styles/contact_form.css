@@ -1,0 +1,57 @@
+/* Contact form container matches page theme */
+.contact-form-container {
+    max-width: 700px;                        /* center and limit width */
+    margin: 50px auto;                        /* center horizontally */
+    background-color: rgba(33,37,41,0.8);    /* semi-transparent dark */
+    color: white;                             /* text color */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);  /* subtle shadow for depth */
+}
+
+/* Title styling */
+.contact-form-title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Input and textarea styling */
+.contact-form-container .form-control {
+    background-color: rgba(255,255,255,0.05); /* subtle dark background */
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-form-container .form-control:focus {
+    background-color: rgba(255,255,255,0.1);
+    border-color: #00ffff;  /* cyan accent to match navbar active link */
+    box-shadow: 0 0 10px rgba(0,255,255,0.5);
+    color: white;
+}
+
+/* Labels */
+.contact-form-container .form-label {
+    color: white;
+    font-weight: 500;
+}
+
+/* Button */
+.contact-form-container .btn {
+    margin-top: 10px;
+    background-color: #ffc107;  /* gold to contrast purple space bg */
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.contact-form-container .btn:hover {
+    background-color: #ffd633;
+    transform: scale(1.05);
+}

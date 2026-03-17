@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/contact_form.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OB Tech Company</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/pricing.html">Pricing</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        OB Tech Company
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div class="About_Text">
+    <h2>What can i use this contact form for?</h2>
+    <p>
+        With the contact form below u have direct contact with us, u can send all you questions or worries and we will answer as fast as possible.
+        The contact form is also the main way to reach us in terms of payment and package discussion.
+    
+    </p>
+</div>
+
+<div class="container contact-form-container my-5 p-4 rounded">
+    <h1 class="mb-4 contact-form-title">Contact Us</h1>
+    <form id="contactForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-light btn-lg w-100">Send Message</button>
+    </form>
+</div>
+
+<footer class="Footer_ text-center p-4">
+    <a href="/Pages/contact.html" class="btn btn-light btn-lg">Contact Us</a>
+    <p class="mt-3">&copy; 2026 OB Tech Company. All rights reserved.</p>
+</footer>
+
+<script>
+const footer = document.querySelector('.Footer_');
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 200){   
+        footer.classList.add('visible');
+    } else {
+        footer.classList.remove('visible');
+    }
+});
+</script>
+
+<script>
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.custom-navbar');
+    if(window.scrollY > 50){
+        navbar.classList.add('shrink');
+    } else {
+        navbar.classList.remove('shrink');
+    }
+});
+</script>
+
+</body>
+</html>
